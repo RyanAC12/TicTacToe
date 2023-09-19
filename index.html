@@ -13,20 +13,26 @@
     </div>
     <div class="boardarea">
         <div class="player1input">
-            <label for="player1">Player 1 name:</label>
-            <input type="text" id="player1" name="player1">
+            <label for="player1">Player X:</label>
+            <input type="text" id="player1" name="player1" required minlength="1" maxlength="10" placeholder="please enter a name">
             <button type="button" id="1submit">Submit</button>
+            <span id="player1name"></span>
         </div>
         <div class="gameboard">
         
         
         </div>
         <div class="player2input">
-            <label for="player2">Player 2 name:</label>
-            <input type="text" id="player2" name="player2">
-            <button type="button" id="1submit">Submit</button>
+            <label for="player2">Player 0:</label>
+            <input type="text" id="player2" name="player2" required minlength="1" maxlength="10" placeholder="please enter a name">
+            <button type="button" id="2submit">Submit</button>
+            <span id="player2name"></span>
         </div>
     </div>
+    <dialog id="displaywinner">
+        <div id="winnertext"></div>
+        <button type="button" id="playagain">Play Again</button>
+    </dialog>
 </div>
     <script src="script.js"></script>
 </body>
